@@ -52,7 +52,6 @@ flycheck_*.el
 hugo*
 
 # Generated files at default location
-/public/
 /resources/_gen
 
 ### Linux ###
