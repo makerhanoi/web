@@ -1,10 +1,10 @@
 baseurl = "https://makerhanoi.github.io/"
-title = "Maker Hanoi - Cùng đóng góp, cùng chia sẻ"
+title = "Maker Hanoi - Your contribution, we share"
 theme = "hugo-universal-theme"
 # themesDir = "../.."
-languageCode = "en-us"
+languageCode = "vi"
 # Site language. Available translations in the theme's `/i18n` directory.
-defaultContentLanguage = "en"
+defaultContentLanguage = "vi"
 # Enable comments by entering your Disqus shortname
 # disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
@@ -13,33 +13,62 @@ googleAnalytics = "UA-80690443-1"
 # Define the number of posts per page
 paginate = 10
 
+[languages]
+  [languages.en]
+    title = "Maker Hanoi - Your contribution, we share"
+    weight = 1
+  [languages.vi]
+    title = "Maker Hanoi - Cùng đóng góp, cùng chia sẻ"
+    weight = 2
+    
 [menu]
 
 # Main menu
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "Home"
     url  = "/"
     weight = 1
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "Blog"
     url  = "/blog/"
     weight = 2
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "FAQ"
     identifier = "faq"
     url  = "/faq/"
     weight = 3
 
-[[menu.main]]
+[[languages.en.menu.main]]
     name = "Contact"
     url  = "/contact/"
     weight = 4
 
-# Top bar social links menu
+[[languages.vi.menu.main]]
+    name = "Trang chủ"
+    url  = "/"
+    weight = 1
 
+[[languages.vi.menu.main]]
+    name = "Blog"
+    url  = "/blog/"
+    weight = 2
+
+[[languages.vi.menu.main]]
+    name = "Hỏi đáp"
+    identifier = "faq"
+    url  = "/faq/"
+    weight = 3
+
+[[languages.vi.menu.main]]
+    name = "Liên hệ"
+    url  = "/contact/"
+    weight = 4
+
+
+# Top bar social links menu
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
@@ -108,9 +137,17 @@ paginate = 10
     blog = "/blog/:year/:month/:day/:filename/"
 
 # Enable or disable top bar with social icons
-[params.topbar]
+[languages.en.params.topbar]
     enable = true
     text = """<p class="hidden-sm hidden-xs">Contact us on +84 85 999 9789 or makerhanoi@gmail.com.</p>
+      <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
+      <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+      </p>
+      """
+
+[languages.vi.params.topbar]
+    enable = true
+    text = """<p class="hidden-sm hidden-xs">Liện hệ với chúng tôi +84 85 999 9789 or makerhanoi@gmail.com.</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
