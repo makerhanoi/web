@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:makerhanoi/makerhanoi.github.io
+	branch = master
