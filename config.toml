@@ -30,59 +30,79 @@ paginate = 10
     url  = "/"
     weight = 1
 
-[[languages.en.menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-    weight = 2
+#[[languages.en.menu.main]]
+#    name = "Blog"
+#    url  = "/blog/"
+#    weight = 2
 
 [[languages.en.menu.main]]
     name = "FAQ"
     identifier = "faq"
     url  = "/faq/"
-    weight = 3
+    weight = 2
 
 [[languages.en.menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 4
+    weight = 3
 
 [[languages.vi.menu.main]]
     name = "Trang chủ"
     url  = "/"
     weight = 1
 
-[[languages.vi.menu.main]]
-    name = "Blog"
-    url  = "/blog/"
-    weight = 2
+#[[languages.vi.menu.main]]
+#    name = "Blog"
+#    url  = "/blog/"
+#    weight = 2
 
 [[languages.vi.menu.main]]
     name = "Hỏi đáp"
     identifier = "faq"
     url  = "/faq/"
-    weight = 3
+    weight = 2
 
 [[languages.vi.menu.main]]
     name = "Liên hệ"
     url  = "/contact/"
-    weight = 4
+    weight = 3
 
 
 # Top bar social links menu
-[[menu.topbar]]
+[[languages.vi.menu.topbar]]
     weight = 1
     name = "GitHub"
     url = "https://github.com/makerhanoi"
     pre = "<i class='fa fa-2x fa-github'></i>"
 
-[[menu.topbar]]
+[[languages.vi.menu.topbar]]
     weight = 2
     name = "Facebook"
     url = "https://www.facebook.com/makerhanoi/"
     pre = "<i class='fa fa-2x fa-facebook'></i>"
 
 
-[[menu.topbar]]
+[[languages.vi.menu.topbar]]
+    weight = 3
+    name = "Email"
+    url = "mailto:makerhanoi@gmail.com"
+    pre = "<i class='fa fa-2x fa-envelope'></i>"
+
+# Top bar social links menu
+[[languages.en.menu.topbar]]
+    weight = 1
+    name = "GitHub"
+    url = "https://github.com/makerhanoi"
+    pre = "<i class='fa fa-2x fa-github'></i>"
+
+[[languages.en.menu.topbar]]
+    weight = 2
+    name = "Facebook"
+    url = "https://www.facebook.com/makerhanoi/"
+    pre = "<i class='fa fa-2x fa-facebook'></i>"
+
+
+[[languages.en.menu.topbar]]
     weight = 3
     name = "Email"
     url = "mailto:makerhanoi@gmail.com"
@@ -123,7 +143,7 @@ paginate = 10
 
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
-    address = """<p><strong>Universal Ltd.</strong>
+    address = """<p><strong>MakerHanoi</strong>
         <br>29 Dương Khuê
         <br>Cầu Giấy
         <br>Hà nội
@@ -147,7 +167,7 @@ paginate = 10
 
 [languages.vi.params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Liện hệ với chúng tôi +84 85 999 9789 or makerhanoi@gmail.com.</p>
+    text = """<p class="hidden-sm hidden-xs">Liện hệ với chúng tôi +84 85 999 9789 hoặc makerhanoi@gmail.com.</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
       </p>
@@ -196,6 +216,6 @@ paginate = 10
     subtitle = ""
 
 [params.recent_posts]
-    enable = true
+    enable = false
     title = "From our blog"
     subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
